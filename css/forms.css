@@ -1,6 +1,6 @@
-#webform {
+/* #webform {
   background-color: var(--form-background-color);
-}
+} */
 
 #form-section,
 #form-summary {
@@ -30,3 +30,16 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+
+
+/* Forms */
+.form-group{margin-bottom: 1rem;}
+
+label, input, button{display: block
+  ;margin-left: 1cm;}
+
+
+  #sum div {display: grid;
+  grid-template-columns: 2fr 5fr; gap: 0.5rem;}
+
+  
