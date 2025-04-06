@@ -20,24 +20,152 @@
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li><a class="menuItem" href="register.html">Kontakt</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1>Kontakt</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Kontaktformular</h2>
+          <p>Brug for råd og vejledning? <br> Indtast dine oplysninger nedenfor, så sørger vi for at henvende os hurtigst muligt.</p>
         </article>
-        <form id="webform"></form>
+        <hr>
+<br>
+
+<!-- Form -->
+
+        <form id="webform">
+
+<fieldset id="platform">
+  <legend>Hvilke platforme var du aktiv</legend>
+  <p>Vælg gerne flere</p>
+  <div class="form-group">
+    <div>
+      <input type="checkbox" id="platform1" name="platform" value="Instagram" />
+      <label for="platform1">Instagram</label>
+    </div>
+    <div>
+      <input type="checkbox" id="platform2" name="platform" value="TikTok" />
+      <label for="platform2">TikTok</label>
+    </div>
+    <div>
+      <input type="checkbox" id="platform3" name="platform" value="Snapchat" />
+      <label for="platform3">Snapchat</label>
+    </div>
+    <div>
+      <input type="checkbox" id="platform5" name="platform" value="Twitter" />
+      <label for="platform5">Twitter</label>
+    </div>
+    <div>
+      <input type="checkbox" id="platform6" name="platform" value="Andet" />
+      <label for="platform6">Andet</label>
+    </div>
+    
+  </div>
+</fieldset>
+
+    <br>
+
+
+
+  <fieldset id="followers">
+    <legend>Følgere</legend>
+    <div class="formcontainer">
+      <div class="form-group">
+        <label for="followers-count">Hvor mange følgere havde du inden SoMe-breakdown?</label>
+        <select name="followers-count" id="followers-count">
+          <option value="" disabled selected>Vælg antal følgere</option>
+          <option value="option1">0 – 5.000</option>
+          <option value="options2">5.000 – 50.000</option>
+          <option value="option3">50.000+</option>
+        </select>
+      </div>
+    </div>
+  </fieldset>
+<br>
+
+
+<fieldset id="help">
+  <legend>Hvordan kan vi hjælpe dig?</legend>
+  <div class="form-group">
+    <label class="blok" for="Uddyb">Uddyb gerne din situation, så vi bedst muligt kan hjælpe dig.</label>
+    <textarea id="uddyb" name="uddyb"></textarea>
+  </div>
+</fieldset>
+
+<br>
+  
+
+<fieldset id="contact">
+  <legend>Kontaktoplysninger</legend>
+  <div class="form-group">
+    <label class="blok" for="name">Dit fulde navn</label>
+    <input type="text" id="name" name="name" placeholder="Navn Efternavn" required />
+  </div>
+  <div class="form-group">
+    <label class="blok" for="email">Din email </label>
+    <input type="email" id="email" name="email" placeholder="emailadresse" required />
+  </div>
+  
+</fieldset>
+
+
+      <br>
+
+<div class="form-group">
+  <label for="accept">Jeg accepterer, at mine data behandles i forbindelse med henvendelsen.</label>
+<input type="checkbox" id="accept" name="accept"/>
+</div>
+
+        <button id="submit_btn">Send</button>
+        </form>
       </section>
+
+      <!-- Form slut -->
+
+        <!-- Summary  Denne sektion skal opdateres!!!!-->
       <section id="form-summary">
         <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
+        <article id="sum">
+
+
+<div>
+<h3>Platform</h3>
+<p id="sumPlatform"></p>
+</div>
+          
+
+<div>
+  <h3>Følgere</h3>
+  <p id="sumFollowers"></p>
+  </div>
+
+  <div>
+    <h3>Hjælp</h3>
+    <p id="sumHelp"></p>
+    </div>
+
+
+      <div>
+        <h3>Kontaktoplysninger</h3>
+        <p id="sumContact"></p>
+        </div>
+
+        <div>
+          <h3>Accept.</h3>
+          <p id="sumAccept"></p>
+          </div>
+
+<form>
+  <button id="reset_btn" type="reset"> Godkend og luk
+
+  </button>
+</form>
+
+          <!-- <p class="placeholder">Opsummering</p> -->
         </article>
       </section>
     </main>
