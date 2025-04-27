@@ -1,0 +1,69 @@
+:root {
+    --primary-bg-color: #2D2B2F;
+    --primary-font-color: #FFFCEC; 
+    --secondary-bg-color: #4B3B4E; 
+    --secondary-font-color: #FFC8E3;
+  
+    /* Header */
+    --header-background-color: #E387B0; 
+    --logotype-background-color: #E387B0;
+  
+    /* Artikler og sektioner */
+    --article-background-color: #3C2E40; 
+    --news-background-color: #5C4863; 
+    --news-background-color-inverted: #5C4863;
+    --info-background-color: #5C4863;
+  
+    /* Tekst */
+    --headline-color: #FFFCEC;
+    --headline-color-inverted: #FFFCEC;
+    --bodytext-color: #FFFCEC;
+    --bodytext-color-inverted: #FFFCEC;
+    --cta-text-color: #FFFCEC;
+    --cta-text-color-inverted: #FFFCEC;
+    --followup-text-color: #FFFCEC;
+    --followup-text-color-inverted: #FFFCEC;
+    --formfield-text-color: #FFFCEC;
+    --form-submit-color: #FFFCEC;
+    --form-submit-color-inverted: #FFFCEC;
+  
+    /* Knapper */
+    --cta-text-bg-color: #E387B0;
+    --cta-text-bg-color-inverted: #E387B0;
+    
+    /* Formularer og felter */
+    --formfield-background-color: #4B3B4E;
+    --formfield-background-color-active: #5C4863;
+    --form-background-color: #4B3B4E;
+    --form-submit-bg-color: #E387B0;
+    --form-submit-bg-color-inverted: #E387B0;
+  
+    /* Borders */
+    --border-color: #FFC8E3;
+    --border-color-light: #FFC8E3;
+  
+    /* Links */
+    --link-color: #FFC8E3;
+    --hover-color: #FFFCEC;
+    --active-color: #ff8ec4;
+  
+    /* Info-bokse */
+    --info-bg-color-yellow: #4B3B4E;
+    --info-bg-color-green: #5C4863;
+
+     /* Text sizes */
+  --logotype-size: 1.5rem;
+  --headline1-size: 2rem;
+  --headline2-size: 1.5rem;
+  --headline3-size: 1.25rem;
+  --bodytext-size: 1rem;
+  --cta-text-size: 1.25rem;
+  --followup-text-size: 0.8rem;
+  --form-submit-size: 1rem;
+
+  /* Fonts */
+  --logotype-font: "Roboto", sans-serif;
+  --headline-font: "Roboto", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  --link-font: "Calibri", sans-serif;
+  }

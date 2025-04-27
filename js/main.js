@@ -1,93 +1,26 @@
-// // // // Cirkler på instruction-siden
-
-// document.querySelector("#circle").addEventListener("mouseover", headHighlight);
-// document.querySelector("#circle").addEventListener("mouseout", headUnHighlight);
-// document.querySelector("#circle").addEventListener("click", info);
-
-// document.querySelector("#circle2").addEventListener("mouseover",headHighlight2);
-// document.querySelector("#circle2").addEventListener("mouseout", headUnHighlight2);
-// document.querySelector("#circle2").addEventListener("click", info2);
-
-// document.querySelector("#circle3").addEventListener("mouseover", headHighlight3);
-// document.querySelector("#circle3").addEventListener("mouseout", headUnHighlight3);
-// document.querySelector("#circle3").addEventListener("click", info3);
-
-
-// // Cirkel 1
-// function headHighlight(){
-//     console.log("headHighlight");
-//     document.querySelector("#circle").style.fill = " #ffffffff";
-// }
-
-
-// function headUnHighlight(){
-//     console.log("headUnHighlight");
-//     document.querySelector("#circle").style.fill = " #FC3FA1";
-// }
-
-
-// function info(){console.log("info"); document.querySelector(".info-text > h2").textContent = "Fra reklamesøjle til arbejdsløs!";
-//     document.querySelector(".info-text > article > p").textContent = "Igår lavede de sponsoreret content for tandblening - næste dag kunne de ikke logge ind. Når platforme forsvinder, forsvinder også levebrødet. Hvad sker der, når ens identitet og indkomst er bygget på likes og likes ikke længere findes?"}
-
-// // Cirkel 2
-
-//     function headHighlight2(){
-//         console.log("headHighlight2");
-//         document.querySelector("#circle2").style.fill = " #ffffffff";
-//     }
-
-
-// function headUnHighlight2(){
-//     console.log("headUnHighlight2");
-//     document.querySelector("#circle2").style.fill = " #FC3FA1";
-// }
-
-
-
-// function info2(){console.log("info2"); document.querySelector(".info-text > h2").textContent = "Branche i frit fald!";
-//     document.querySelector(".info-text > article > p").textContent = "Influencer-industrien var vurderet til milliarder. Men ingen forudså hvor hurtigt det hele kunne styrte i grus. Kollapset har ramt bredt - fra mikro-influencers til store navne. Læs om udviklingen og hvordan branchen nu forsøger at finde fodfæste i et post-SoMe-landskab. "}
-
-//     // Cirkel 3
-
-//     function headHighlight3(){
-//         console.log("headHighlight3");
-//         document.querySelector("#circle3").style.fill = " #ffffffff";
-//     }
-
-
-// function headUnHighlight3(){
-//     console.log("headUnHighlight3");
-//     document.querySelector("#circle3").style.fill = " #FC3FA1";
-// }
-
-
-
-// function info3(){console.log("info3"); document.querySelector(".info-text > h2").textContent = "HJÆLP! Jeg er influencer!";
-//     document.querySelector(".info-text > article > p").textContent = "Har du mistet din platform, dit publikum eller din plan? Uanset om du leder efter sparring, netværk eller bare nogen at dele panikken med, så er du ikke alene. Vi har samlet råd, overlevelsesstrategier og kontaktformular, så du kan få hjælp her og nu!"}
-
-
+console.log("JavaScript kører!");
 
 
 
 // Accept-knap
 document.querySelector("#accept").addEventListener("click", () => {
-    document.querySelector(".info-text > h2").textContent = "Fra reklamesøjle til arbejdsløs!";
+    document.querySelector(".info-text > h2").textContent = "Find råd og værktøjer til at navigere i stilheden.";
     document.querySelector(".info-text > article > p").textContent =
-      "I går lavede de sponsoreret content for tandblegning – næste dag kunne de ikke logge ind. Når platforme forsvinder, forsvinder også levebrødet. Hvad sker der, når ens identitet og indkomst er bygget på likes og likes ikke længere findes?";
+      "Råd";
   });
   
   // Decline-knap
   document.querySelector("#decline").addEventListener("click", () => {
-    document.querySelector(".info-text > h2").textContent = "Branche i frit fald!";
+    document.querySelector(".info-text > h2").textContent = "Mød andre, der står i samme situation.";
     document.querySelector(".info-text > article > p").textContent =
-      "Influencer-industrien var vurderet til milliarder. Men ingen forudså, hvor hurtigt det hele kunne styrte i grus. Kollapset har ramt bredt – fra mikro-influencers til store navne. Læs om udviklingen og hvordan branchen nu forsøger at finde fodfæste i et post-SoMe-landskab.";
+      "Mød andre";
   });
   
   // Remind me-knap
   document.querySelector("#Remind_me").addEventListener("click", () => {
-    document.querySelector(".info-text > h2").textContent = "HJÆLP! Jeg er influencer!";
+    document.querySelector(".info-text > h2").textContent = "Tag en test og tjek dine abstinenser.";
     document.querySelector(".info-text > article > p").textContent =
-      "Har du mistet din platform, dit publikum eller din plan? Uanset om du leder efter sparring, netværk eller bare nogen at dele panikken med – så er du ikke alene. Vi har samlet råd, overlevelsesstrategier og kontaktformular, så du kan få hjælp her og nu!";
+      "Savner du notifikationer? Rækker du stadig ud efter din telefon – selvom skærmen er sort? Vores hurtige test hjælper dig med at finde ud af, hvor hårdt dit SoMe-breakdown har ramt. Få indsigt, gode råd og (måske) et grin med på vejen. Du er ikke alene.";
   });
 
 
@@ -117,9 +50,6 @@ document.querySelector("#accept").addEventListener("mouseover", () => {
   });
 
 
-
-
-// Form
 
 
 // // ########OPSUMMERING ####### Forvirring, kig på det inde på github

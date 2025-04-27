@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/custom.css" id="lightmode"/>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/infographic.css" />
@@ -17,10 +17,19 @@
     <header>
       <nav>
         <div id="logotype-wrapper">
-          <a href="index.html"> LOGOTYPE </a>
+          <a href="index.html"> 
+            <img src="assets/offline-logo.svg" alt="offlineLogo" class="logo">
+          </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+              <!-- darkmode -->
+      <legend id="switchtext3">Dark mode</legend>
+      <label class="switch">
+        <input id="switchBtn3" type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+      <!-- Darkmode slut -->
+          <li><a class="menuItem" href="instruction.html">Genstart </a></li>
           <li><a class="menuItem" href="register.html">Kontakt</a></li>
         </ul>
       </nav>
@@ -117,7 +126,7 @@
 
 
       <section class="info-text">
-        <h2>Overskrift</h2>
+        <h2>Genstart</h2>
         <article>
           <p class="placeholder">INFO-TEKST</p>
         </article>
@@ -154,5 +163,6 @@
     </footer>
   
     <script src="js/main.js" ></script>
+    <script src="js/dark.js"> </script>
   </body>
 </html>
