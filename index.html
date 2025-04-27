@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/custom.css"  id="lightmode"/>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
+    <!-- <link rel="stylesheet" href="css/burger.css" /> -->
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
@@ -16,60 +16,124 @@
     <header>
       <nav>
         <div id="logotype-wrapper">
-          <a href="index.html"> LOGOTYPE </a>
+          <!-- <a href="index.html">
+            <img src="assets/offline-logo.svg" alt="LOGO" class="logo" /> 
+            <img src="assets/offline.svg" alt="offlineLogo" class="offline">
+          </a> -->
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+
+
+      <!-- darkmode -->
+      <legend id="switchtext3">Dark mode</legend>
+      <label class="switch">
+        <input id="switchBtn3" type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+      <!-- Darkmode slut -->
+       
+
+          <li><a class="menuItem" href="instruction.html">Genstart </a></li>
           <li><a class="menuItem" href="register.html">Kontakt</a></li>
         </ul>
       </nav>
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
+        <a href="index.html">
+          <img src="assets/offline-logo2.svg" alt="LOGO" class="logo2" /> 
+        </a>
         <div>
-          <h1>Overskrift</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <h1>Some-kollaps</h1>
+          <h3 class="topBeskrivelse">Alt du skal vide om det digitale sammenbrud!</h3>
         </div>
       </div>
     </section>
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="assets/iphone.svg" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam ducimus ea, sed minima asperiores.</p>
-            <a href="" class="cta_btn">Se mere</a>
+            <h2>Genstart</h2>
+            <p> 1. Tag en test og tjek dine abstinenser.</p>
+              <p>2. Find råd og værktøjer til at navigere i stilheden.</p>
+              <p>3. Mød andre, der står i samme situation.</p>
+            <a href="instruction.html" class="read-more">Se mere</a>
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="assets/help.svg" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam ducimus ea, sed minima asperiores.</p>
-            <a href="" class="cta_btn">Se mere</a>
+            <h2>Kontakt</h2>
+            <p>Har du brug for råd, vejledning eller bare en snak? Udfyld vores kontaktformular – vi er her for at hjælpe dig videre.</p>
+            <a href="register.html" class="read-more">Se mere</a>
           </div>
         </article>
       </section>
+      <!-- 1. nyhed/artikel -->
       <section id="breaking">
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Branche i frit fald</h3>
+          <p>Hvad sker der, når likes ikke længere findes? Pludselig er alt sort.</p>
+          <img src="assets/breaking.svg" alt="news_img" />
+<dialog id="newsDialog">
+  <h4>Branche i frit fald</h4>
+  <p>Hvad sker der, når likes ikke længere findes? Pludselig er alt sort. Ikke på grund af strømmen – men fordi din feed er tom. TikTok er væk. Instagram? Lukket. Snapchat? Slut. Influencer-branchen, som før blev målt i engagement, samarbejder og algoritmisk held, har mistet sit fundament. Og med det: sin identitet.</p>
+  <img src="assets/artikel1.svg" alt="billde">
+  <p>Det er svært at forstå, hvor hurtigt det gik. En hel økonomi, en hel livsstil, en hel generation – fanget i frit fald.  Mange vågnede med kameraet tændt. Nu skal hverdagen opfindes forfra. Hvordan skaber man struktur, mening og arbejdsliv uden notifikationer? Hvordan vurderer man sin egen værdi uden likes? For mange er platformen ikke bare et værktøj – det er personen.</p>
+  <p>Når hver dag er dokumenteret, hver tanke delt og hvert minut designet til deling, føles det som et personligt sammenbrud, når platformene forsvinder. Hvem er jeg, hvis ingen følger med? En ny virkelighed kræver nye svar. Måske en overgang til traditionelle medier? Måske mere offline fællesskab? Eller måske er det tid til at skabe noget, der ikke kan slettes med ét tryk?</p>
+  <form method="dialog">
+    <button class="close-dialog">Luk nyhed </button>
+  </form>
+</dialog>
+<button class="read-more"> Læs mere </button>
+          <!-- <a class="cta_btn" href="" id="read-more">Læs mere</a> -->
         </article>
+
+        <!-- 2. artikel -->
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Nyt liv uden likes</h3>
+          <p>Hvad gør vi nu, når notifikationerne er væk?</p>
+          <img src="assets/breaking1.svg" alt="news_img" />
+          <dialog id="newsDialog">
+            <h4>Nyt liv uden likes</h4>
+            <p>Hvad gør vi nu, når notifikationerne er væk?</p>
+            <img src="assets/artikel2.svg" alt="billde">
+            <h5>“Skal vi… lave noget?”</h5>
+            <p>Spørgsmålet hænger i luften som en dårlig punchline. Ingen tager telefonen frem – for den er tom. Ingen tjekker deres feed – for der er ikke noget. Vi er offline. Ikke bare “på flytilstand”, men helt væk. TikTok? Slukket. Insta? Gone. Snapchat? Død.Så… hvad nu? For første gang i årevis stirrer vi hinanden i øjnene og skal selv finde på. Velkommen til livet uden likes.</p>
+            <p>At afinstallere sociale medier plejer at være en detox – nu er det permanent. Det føles som at være lukket ud i solen efter flere års indendørsliv. Uden algoritmen til at bestemme, hvad der er sjovt, hvem der trender, og hvad der “rør sig”, er der ét spørgsmål, der presser sig på: Hvad rør dig?</p>
+            <form method="dialog">
+              <button class="close-dialog">Luk nyhed </button>
+            </form>
+          </dialog>
+          <button class="read-more"> Læs mere </button>
         </article>
+
+        <!-- 3. artikel -->
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Underholdning uden en skærm</h3>
+          <p>Hvad er et liv uden sociale medier? Vi har fundet 10 gode ideer til dig, som føler at livet er gået i stå.</p>
+          <img src="assets/breaking2.png" alt="news_img" />
+          <dialog id="newsDialog">
+            <h4>Underholdning uden en skærm</h4>
+            <p>Når feedet går i sort, må fantasien tage over. Her er dine redningsplanker til en virkelighed uden notifikationer.</p>
+            <img src="assets/artikel3.svg" alt="billede">
+            <h2>1</h2><p>Skriv noget, bare for dig selv.Ikke for din bio, ikke for en “caption” – men for dig. En tanke. Et digt. En dagbog.</p>
+            <h2>2</h2><p>Gå en tur – uden høretelefoner. Du vil blive overrasket over, hvor mange lyde verden faktisk har.</p>
+            <h2>3</h2><p>Prøv at ringe til nogen. Ja, ring. Brug stemmen. Og ikke kun i voice memos.</p>
+            <h2>4</h2><p>Lav noget med dine hænder. Tegn. Strik. Byg et møbel. Saml noget. (Uden at filme det.)</p>
+            <h2>5</h2><p>Lån en bog. Fra et rigtigt bibliotek. Et sted uden WiFi.</p>
+            <img src="assets/happy.svg" alt="reading a book">
+            <h2>6</h2><p>Gå en tur – uden høretelefoner. Du vil blive overrasket over, hvor mange lyde verden faktisk har.</p>
+            <h2>7</h2><p>Invitér nogen over – bare fordi. Uden program. Uden event. Bare… nærvær.</p>
+            <h2>8</h2><p>Spil et brætspil. (Du kan stadig flexe dine strategiske skills – bare i slowmotion.)</p>
+            <h2>9</h2><p>Find tilbage til et gammelt hobbyprojekt. Hvad lavede du, før reels tog din tid?.</p>
+            <h2>10</h2> <p>Lav mad med nogen – uden at tage billeder. Det smager faktisk bedre sådan.</p>
+            <form method="dialog">
+              <button class="close-dialog">Luk nyhed </button>
+            </form>
+          </dialog>
+          <button class="read-more"> Læs mere </button>
         </article>
       </section>
     </main>
@@ -100,6 +164,7 @@
         </ul>
       </nav>
     </footer>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/front.js"></script>
+    <script src="js/dark.js"> </script>
   </body>
 </html>
